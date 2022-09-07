@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MQ Diplom</title>
+    <title>MQ Diploma Kate</title>
     <link rel="stylesheet" href="css/style.css">
-</head>
+
 <body class="page">
   <header class="header">
-    <div class="container">
+    <div class="header-container">
       <a href="#0"><img src="svg/noemi-logo.svg" class="header-logo" alt="Логотип"></a>
       <nav class="menu">
+        <button class="burger-button">
+        </button>
         <ul class="menu-list">
           <li class="menu-list-item">
             <a class="menu-link" href="#0">Главная</a>
@@ -40,64 +42,64 @@
   <section class="trends">
     <h2 class="trends-header-title">Сейчас в тренде</h2>
     <div class="trends-container">
-      <article class="trend-block">
-        <div class="trend-container trend-image trend-image__1">
-          <div class="trend-article">
-            <ul class="trend-category">
-              <li class="trend-item">
-                <a class="trend-category-link" href="#0">Lifestyle</a>
-              </li>
-              <li class="trend-item">
-                <a class="trend-category-link" href="#0">Interior</a>
-              </li>
-            </ul>
-            <a href="#0"><h2 class="trend-title">Сейчас в тренде: сад  на подоконнике</h2></a>
-          </div>
+      <article class="trend-block trend_1">
+        <div class="trend-container">
+          <ul class="trend-category">
+            <li class="trend-item">
+              <a class="trend-category-link" href="#0">Lifestyle</a>
+            </li>
+            <li class="trend-item">
+              <a class="trend-category-link" href="#0">Interior</a>
+            </li>
+          </ul>
+          <header class="trend-title">
+            <h3 class="trend-title-name"><a href=#0 class="trend-title-link">Сейчас в тренде: сад на подоконнике</a></h3>
+          </header>
         </div>
       </article>
 
-      <article class="trend-block">
-        <div class="trend-container trend-image trend-image__2">
-          <div class="trend-article">
-            <ul class="trend-category">
-              <li class="trend-item">
-                <a class="trend-category-link" href="#0">Food</a>
-              </li>
-            </ul>
-            <a href="#0"><h2 class="trend-title">сыры на красивых  картинках из интернета: какие они на вкус?</h2></a>
-          </div>
+      <article class="trend-block trend_2">
+        <div class="trend-container">
+          <ul class="trend-category">
+            <li class="trend-item">
+              <a class="trend-category-link" href="#0">Food</a>
+            </li>
+          </ul>
+          <header class="trend-title">
+            <h3 class="trend-title-name"><a href=#0 class="trend-title-link">сыры на красивых  картинках из интернета: какие они на вкус?</a></h3>
+          </header>
         </div>
       </article>
       
-      <article class="trend-block">
-        <div class="trend-container trend-image trend-image__3">
-          <div class="trend-article">
-            <ul class="trend-category">
-              <li class="trend-item">
-                <a class="trend-category-link" href="#0">Lifestyle</a>
-              </li>
-              <li class="trend-item">
-                <a class="trend-category-link" href="#0">Travel</a>
-              </li>
-            </ul>
-            <a href="#0"><h2 class="trend-title">СОБИРАЕМСЯ В ПЕРВЫЙ ПОХОД В ГОРЫ</h2></a>
-          </div>
+      <article class="trend-block trend_3">
+        <div class="trend-container">
+          <ul class="trend-category">
+            <li class="trend-item">
+              <a class="trend-category-link" href="#0">Lifestyle</a>
+            </li>
+            <li class="trend-item">
+              <a class="trend-category-link" href="#0">Travel</a>
+            </li>
+          </ul>
+          <header class="trend-title">
+            <h3 class="trend-title-name"><a href=#0 class="trend-title-link">СОБИРАЕМСЯ В ПЕРВЫЙ ПОХОД В ГОРЫ</a></h3>
+          </header>
         </div>
       </article>
 
-      <article class="trend-block">
-        <div class="trend-container trend-image trend-image__4">
-          <div class="trend-article">
-            <ul class="trend-category">
-              <li class="trend-item">
-                <a class="trend-category-link" href="#0">Food</a>
-              </li>
-              <li class="trend-item">
-                <a class="trend-category-link" href="#0">Health</a>
-              </li>
-            </ul>
-            <a href="#0"><h2 class="trend-title">Сейчас в тренде: сКОЛЬКО ВИТАМИНА c В ЛИМОНАХ?</h2></a>
-          </div>
+      <article class="trend-block trend_4">
+        <div class="trend-container">
+          <ul class="trend-category">
+            <li class="trend-item">
+              <a class="trend-category-link" href="#0">Food</a>
+            </li>
+            <li class="trend-item">
+              <a class="trend-category-link" href="#0">Health</a>
+            </li>
+          </ul>
+          <header class="trend-title">
+            <h3 class="trend-title-name"><a href=#0 class="trend-title-link">Сейчас в тренде: сКОЛЬКО ВИТАМИНА c В ЛИМОНАХ?</a></h3>
+          </header>
         </div>
       </article>
     </div>
@@ -357,7 +359,7 @@
       </section>
 
     </aside>
-  </div>
+  </section>
 
   <section class="products">
     <h2 class="products-header-title">Наши изделия</h2>
@@ -365,6 +367,7 @@
       <article class="product">
         <picture class="product-imgbox">
           <source media="(max-width: 640px)" srcset="images/shop-item-mobile1.jpg">
+          <source media="(min-width: 641px) and (max-width: 1199px)" srcset="images/shop-item-tablet1.jpg">
           <img class="product-img" src="images/shop-item-desk1.jpg" alt="Картинка продукта">
         </picture>
         <div class="product-body">
@@ -395,6 +398,7 @@
       <article class="product">
         <picture class="product-imgbox">
           <source media="(max-width: 640px)" srcset="images/shop-item-mobile2.jpg">
+          <source media="(min-width: 641px) and (max-width: 1199px)" srcset="images/shop-item-tablet2.jpg">
           <img class="product-img" src="images/shop-item-desk2.jpg" alt="Картинка продукта">
         </picture>
         <div class="product-body">
@@ -421,6 +425,7 @@
       <article class="product">
         <picture class="product-imgbox">
           <source media="(max-width: 640px)" srcset="images/shop-item-mobile3.jpg">
+          <source media="(min-width: 641px) and (max-width: 1199px)" srcset="images/shop-item-tablet3.jpg">
           <img class="product-img" src="images/shop-item-desk3.jpg" alt="Картинка продукта">
         </picture>
         <div class="product-body">
